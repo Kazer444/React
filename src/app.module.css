@@ -1,0 +1,28 @@
+
+.header{
+    background-color: burlywood;
+    grid-area: header;
+}
+.sidebar{
+    grid-area:sidebar;
+    background-color: cadetblue;
+}
+.body{
+    grid-area:body;
+    background-color: chartreuse;
+}
+
+.bottom{
+    grid-area: bottom;
+    background-color: cyan;
+}
+
+
+.app{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-areas: 
+    'header header'
+    'sidebar body'
+    'bottom bottom'
+}

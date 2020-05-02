@@ -1,0 +1,27 @@
+.login{
+    float:right;
+}
+
+.main{
+    display:grid;
+    grid-template-areas: 
+    'p d u g l';
+
+    
+}
+
+.profile{
+    grid-area: p;
+}
+.dialog{
+    grid-area: d;
+}
+.users{
+    grid-area: u;
+}
+.login{
+    grid-area: l;
+}
+.groups{
+    grid-area: g;
+}
