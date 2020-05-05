@@ -8,25 +8,19 @@ import { loginAPI } from '../API/API';
 
 
 
-
 class Body extends React.Component {
 
     componentDidMount() {
-
-        axios.get(`https://social-network.samuraijs.com/api/1.0/profile/${this.props.match.params.userId}`).then((data) => { this.props.userId(data.data) })
+        axios.get(`https://social-network.samuraijs.com/api/1.0/profile/${this.props.match.params.userId}`).
+        then((data) => { this.props.userId(data.data) })
     }
-
-   
     loggining=(props)=>{
         return  loginAPI.login(props.email,props.password,props.rememberMe).
         then(data=>data.data.resultCode===0?
             this.props.authThunk():
          null)
     }
-
-
     render() {
-        debugger;
         // return this.props.state.authMe.resultCode===0? 
         return <div>
             <Route path={`/body/profile/:${this.props.match.params.userId}?`} render={() => {

@@ -13,7 +13,7 @@ let logout=()=>{
 
     return (
         <div className={c.main}>
-            <div className={c.profile}> <NavLink to='/body/profile'>Profile</NavLink></div>
+                <div className={c.profile}> <NavLink to='/body/profile'>Profile</NavLink></div>
             <div className={c.dialogs}> <NavLink to='/body/Dialogs'>Dialogs</NavLink></div>
             <div className={c.users}> <NavLink to='/users'>Users</NavLink></div>
             <div className={c.login}>

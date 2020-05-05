@@ -9,7 +9,7 @@ class Status extends React.Component{
         status:''
     }
     componentDidMount(){
-        statusAPI.getStatus(3).then((data)=>{return this.setState({status:data.data}),
+        statusAPI.getStatus(7222).then((data)=>{return this.setState({status:data.data}),
         console.log(data)
         })
     }
