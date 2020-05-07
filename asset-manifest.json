@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/React/static/css/main.c7983cc9.chunk.css",
+    "main.js": "/React/static/js/main.08df2f48.chunk.js",
+    "main.js.map": "/React/static/js/main.08df2f48.chunk.js.map",
+    "runtime-main.js": "/React/static/js/runtime-main.ef03d3a7.js",
+    "runtime-main.js.map": "/React/static/js/runtime-main.ef03d3a7.js.map",
+    "static/js/2.98c2b596.chunk.js": "/React/static/js/2.98c2b596.chunk.js",
+    "static/js/2.98c2b596.chunk.js.map": "/React/static/js/2.98c2b596.chunk.js.map",
+    "index.html": "/React/index.html",
+    "precache-manifest.72add07ae3b526b87c9e729e61fe8cf9.js": "/React/precache-manifest.72add07ae3b526b87c9e729e61fe8cf9.js",
+    "service-worker.js": "/React/service-worker.js",
+    "static/css/main.c7983cc9.chunk.css.map": "/React/static/css/main.c7983cc9.chunk.css.map",
+    "static/js/2.98c2b596.chunk.js.LICENSE.txt": "/React/static/js/2.98c2b596.chunk.js.LICENSE.txt",
+    "static/media/dog.jpg": "/React/static/media/dog.09324664.jpg",
+    "static/media/free-gif-preloaders-psds-09.gif": "/React/static/media/free-gif-preloaders-psds-09.87b8671c.gif",
+    "static/media/user.png": "/React/static/media/user.f8a15e74.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef03d3a7.js",
+    "static/js/2.98c2b596.chunk.js",
+    "static/css/main.c7983cc9.chunk.css",
+    "static/js/main.08df2f48.chunk.js"
+  ]
+}
