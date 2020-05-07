@@ -1,4 +1,4 @@
-import { createStore, combineReducers, applyMiddleware } from "redux";
+import {createStore, combineReducers, applyMiddleware, compose} from "redux";
 import { postReducer } from "./Reducers/postReducer";
 import { commentReducer } from "./Reducers/commentReducer";
 import { usersReducer } from "./Reducers/UsersReducer";
@@ -17,12 +17,14 @@ let reducers=combineReducers(
   login:loginReducer,
   form:reducer
 
-})
+});
 
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+export let store=createStore(
+    reducers,
+    composeEnhancers(applyMiddleware(thunkMiddleware)));
 
-export let store=createStore(reducers,applyMiddleware(thunkMiddleware))
-
-window.store=store
+window.store=store;
 
 
 

@@ -6,7 +6,7 @@ import { Field, reduxForm } from 'redux-form';
 export let FormTest=(props)=>{
     return (
         <form onSubmit={props.handleSubmit}>
-            <Field name='postMessage' component='text'>{props.postMessage}</Field>
+            <Field name='postMessage' component='div'>{props.postMessage}</Field>
             <Field name='forInput' component='textarea'> </Field>
             <div><button>Add</button></div> 
         </form>

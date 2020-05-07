@@ -11,7 +11,7 @@ let StatusWithHooks = (props) => {
     useEffect(() => {
 
         async function a() {
-            let a = await statusAPI.getStatus(7222)
+            let a = await statusAPI.getStatus(props.myId)
             setDataStatus(a.data)
         }
         a()
@@ -38,31 +38,26 @@ let StatusWithHooks = (props) => {
     }
 
 
-    return <form onSubmit={props.handleSubmit}>
-        {status ?
-            <div onDoubleClick={func}>{dataStatus}</div> :
-            <Field
-                name='second'
-                component={a}
-                onBlur={func2}
-                
-                onFocus={true} />}
-    </form>
+    return <div>
+        {status? <div onDoubleClick={func}>{dataStatus?dataStatus:'hello'}</div>:
+            <div><input value={dataStatus} onBlur={func2} onChange={func3} autoFocus={true}/></div>}
+    </div>
+
+    // return <form onSubmit={props.handleSubmit}>
+    //     {status ?
+    //         <div onDoubleClick={func}>{dataStatus}</div> :
+    //         <Field
+    //             name='second'
+    //             component={a}
+    //             onBlur={func2}
+    //
+    //             onFocus={true} />}
+    // </form>
 
 
-
-    // }
-
-
-
-
-    // return <div>
-    //    {status? <div onDoubleClick={func}>{dataStatus}</div>:
-    //     <div><input value={dataStatus} onBlur={func2} onChange={func3} autoFocus={true}/></div>}
-    // </div>
 }
 
-StatusWithHooks = reduxForm({ form: 'status' })(StatusWithHooks)
+// StatusWithHooks = reduxForm({ form: 'status' })(StatusWithHooks)
 
 export default StatusWithHooks
 

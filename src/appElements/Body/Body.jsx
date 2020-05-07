@@ -25,7 +25,8 @@ class Body extends React.Component {
         return <div>
             <Route path={`/body/profile/:${this.props.match.params.userId}?`} render={() => {
                 return <Profile comment={this.props.state.comment.comment}
-                    addComment={this.props.comment} info={this.props.state.id} />
+                    addComment={this.props.comment} info={this.props.state.id}
+                myId={this.props.state.authMe.data.id}/>
             }} />
 
             <Route exact path={`/body/Dialogs/:${this.props.match.params.userId}?`}
